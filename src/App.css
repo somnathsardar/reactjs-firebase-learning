@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.toast-container .bg-success .toast-body, .toast-container .bg-danger .toast-body, .toast-container .bg-warning .toast-body{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-image-container, .signin-image-container{
+  border: 1px solid #dee2e6;
+}
+.signup-form-container, .signin-form-container{
+  border-top: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  /* .container{
+    width: 90% !important;
+  } */
+  .signup-image-container, .signin-image-container{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .signup-form-container, .signin-form-container{
+    border-left: 1px solid #dee2e6;
   }
 }
